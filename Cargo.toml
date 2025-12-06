@@ -1,0 +1,10 @@
+[package]
+name = "no_sdk_token_decode"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+solana-client = "2"                                    # RPC client
+solana-sdk = "2"                                       # Pubkey type etc.
+bytemuck = { version = "1.13", features = ["derive"] }
+anyhow = "1.0"
