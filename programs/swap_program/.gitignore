@@ -1,1 +1,3 @@
+scripts/deployer-keypair.json
 target/
+test-ledger/
