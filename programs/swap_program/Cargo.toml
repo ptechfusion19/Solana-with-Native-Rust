@@ -1,6 +1,24 @@
 [package]
 name = "swap_program"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
 
 [dependencies]
+# pin solana-program to match your toolchain (use exact version seen in cargo tree)
+solana-program = "=1.18.26"
+
+# borsh pinned to avoid multiple minor versions
+borsh = "=0.10.4"
+borsh-derive = "=0.10.4"
+
+# IMPORTANT: disable default features and disable the entrypoint in spl-token to avoid global allocator duplication
+spl-token = { version = "=3.5.0", default-features = false, features = [
+    "no-entrypoint",
+] }
+
+[features]
+custom-heap = []
+custom-panic = []
