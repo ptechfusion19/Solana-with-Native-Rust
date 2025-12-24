@@ -98,7 +98,8 @@ fn main() -> Result<()> {
     println!("Pool state pubkey: {}", pool_state_kp.pubkey());
 
     // Derive PDA (informative)
-    let (pda, bump) = Pubkey::find_program_address(&[b"pool", pool_state_kp.pubkey().as_ref()], &program_id);
+    let (pda, bump) =
+        Pubkey::find_program_address(&[b"pool", pool_state_kp.pubkey().as_ref()], &program_id);
     println!("Derived pool PDA: {} bump: {}", pda, bump);
 
     Ok(())
