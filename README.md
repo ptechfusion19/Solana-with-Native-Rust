@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://programmx.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/programmxhq/.github/main/brand/logo-dark.png">
+      <img src="https://raw.githubusercontent.com/programmxhq/.github/main/brand/logo-light.png" alt="ProgrammX" width="300">
+    </picture>
+  </a>
+</p>
+
 # Solana with Native Rust
 
 A comprehensive collection of production-ready Solana programs and tools built with native Rust. This repository demonstrates advanced Solana development patterns, DeFi protocols, trading bots, and low-level blockchain interactions without relying heavily on SDKs.
@@ -146,3 +155,7 @@ MIT License
 ## Author
 
 ProgrammX - Let's build on Solana!
+
+---
+
+<sub>Built by <a href="https://programmx.com">ProgrammX</a> — AI & blockchain product studio · <a href="mailto:hello@programmx.com">hello@programmx.com</a></sub>
